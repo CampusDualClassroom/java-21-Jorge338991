@@ -42,7 +42,7 @@ public class Exercise21 {
 
     private static void printSet(Set<String> customSet) {
         for(String elemento : customSet){
-            System.out.println(elemento);
+            System.out.println(elemento.toString());
         }
     }
 
