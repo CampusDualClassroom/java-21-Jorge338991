@@ -8,48 +8,42 @@ public class Exercise21 {
 
     public static Set<String> createHashSet() {
         Set<String> miColeccion = new HashSet<>();
-        String arrayString[] = {
-                "ELEMENT KPRBC",
-                "ELEMENT KPRBC",
-                "ELEMENT YPBTM",
-                "ELEMENT AADXU",
-                "ELEMENT RXCGJ",
-                "ELEMENT WYMVD",
-                "ELEMENT WFGEJ",
-                "ELEMENT TYGBS",
-                "ELEMENT MAPTK",
-                "ELEMENT GJXVE",
-                "ELEMENT BAFGL"
-        };
-        for (String elemento : arrayString) {
-            miColeccion.add(elemento);
-        }
+
+        miColeccion.add("ELEMENT KPRBC");
+        miColeccion.add("ELEMENT YPBTM");
+        miColeccion.add("ELEMENT AADXU");
+        miColeccion.add("ELEMENT RXCGJ");
+        miColeccion.add("ELEMENT WYMVD");
+        miColeccion.add("ELEMENT WFGEJ");
+        miColeccion.add("ELEMENT TYGBS");
+        miColeccion.add("ELEMENT MAPTK");
+        miColeccion.add("ELEMENT GJXVE");
+        miColeccion.add("ELEMENT BAFGL");
+        
         return miColeccion;
     }
 
     public static Set<String> createTreeSet() {
         Set<String> miColeccion2 = new TreeSet<>();
-        String arrayString[] = {
-                "ELEMENT KPRBC",
-                "ELEMENT KPRBC",
-                "ELEMENT YPBTM",
-                "ELEMENT AADXU",
-                "ELEMENT RXCGJ",
-                "ELEMENT WYMVD",
-                "ELEMENT WFGEJ",
-                "ELEMENT TYGBS",
-                "ELEMENT MAPTK",
-                "ELEMENT GJXVE",
-                "ELEMENT BAFGL"
-        };
-        for (String elemento : arrayString) {
-            miColeccion2.add(elemento);
-        }
+
+        miColeccion2.add("ELEMENT KPRBC");
+        miColeccion2.add("ELEMENT YPBTM");
+        miColeccion2.add("ELEMENT AADXU");
+        miColeccion2.add("ELEMENT RXCGJ");
+        miColeccion2.add("ELEMENT WYMVD");
+        miColeccion2.add("ELEMENT WFGEJ");
+        miColeccion2.add("ELEMENT TYGBS");
+        miColeccion2.add("ELEMENT MAPTK");
+        miColeccion2.add("ELEMENT GJXVE");
+        miColeccion2.add("ELEMENT BAFGL");
+
         return miColeccion2;
     }
 
     private static void printSet(Set<String> customSet) {
-        System.out.println(customSet);
+        for(String elemento : customSet){
+            System.out.println(elemento);
+        }
     }
 
     public static boolean addElementToSet(Set<String> set, String elementToAdd) {
